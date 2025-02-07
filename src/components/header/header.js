@@ -23,8 +23,7 @@ function Header() {
             <nav className="header__bottom">
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/shop">Furniture</Link></li>
-                    <li><Link to="/about">Sofas&Armchairs</Link></li>
+                    <li><Link to="/sofa">Sofas&Armchairs</Link></li>
                     <li><Link to="/contact">Tables</Link></li>
                     <li><Link to="/contact">Bed&Mattressess</Link></li>
                     <li><Link to="/contact">Lamps and Lighting</Link></li>
