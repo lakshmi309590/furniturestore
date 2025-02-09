@@ -22,12 +22,12 @@ function Header() {
             {/* Bottom Row */}
             <nav className="header__bottom">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/home">Home</Link></li>
                     <li><Link to="/sofa">Sofas&Armchairs</Link></li>
-                    <li><Link to="/contact">Tables</Link></li>
-                    <li><Link to="/contact">Bed&Mattressess</Link></li>
-                    <li><Link to="/contact">Lamps and Lighting</Link></li>
-                    <li><Link to="/contact">Decoration</Link></li>
+                    <li><Link to="/tables">Tables</Link></li>
+                    <li><Link to="/bed">Bed&Mattressess</Link></li>
+                    <li><Link to="/lamp">Lamps and Lighting</Link></li>
+                    <li><Link to="/decore">Decoration</Link></li>
                 </ul>
             </nav>
         </header>

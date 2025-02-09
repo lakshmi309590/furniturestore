@@ -1,43 +1,78 @@
-.productItem{
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+/* Product Grid Layout */
+.productItem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
+
+/* Product Card */
 .product-card {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  .product-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 13px;
-    border-radius: 4px;
-  }
-  .product-card h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 8px;
-  }
-  
-  /* Product details */
-  .product-card p {
-    font-size: 0.9rem;
-    color: #555;
-    margin: 4px 0;
-  }
-  
-  /* Add spacing for price and quantity */
-  .product-card p:last-child {
-    margin-bottom: 0;
-  }
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Product Info */
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+ 
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-category {
+  font-size: 14px;
+  color: gray;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9800;
+  margin: 10px 0;
+}
+
+.product-quantity {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 250px
+}
+
+.add-to-cart-btn:hover {
+  background: #e68900;
+}
