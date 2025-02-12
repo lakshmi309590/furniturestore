@@ -5,11 +5,12 @@ import { myContext } from "../App";
 import "./Home.css";
 import Footer from "../components/Footer/footer";
 import LikedButton from "../components/LikedButton/LikedButton";
+import CartButton from "../components/cartContext/cartContext";
 
 
 function Home() {
   const { sharedValue } = useContext(myContext);
-
+  
   return (
     <div>
       <Header />
@@ -24,7 +25,7 @@ function Home() {
                 <p className="product-category">{item.category}</p>
                 <p className="product-price">${item.price}</p>
                 <p className="product-quantity">Stock: {item.qty}</p>
-                <button className="add-to-cart-btn">Add to Cart</button>
+                <CartButton item={item} />
                 
             </div>
         </div>

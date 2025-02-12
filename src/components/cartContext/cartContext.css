@@ -1,0 +1,29 @@
+.cart-btn {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center horizontally */
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%; /* Optional: Adjust width if needed */
+    text-align: center;
+}
+  
+.cart-btn:hover {
+    background-color: #e65c00;
+}
+
+.cart-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.cart-icon {
+    font-size: 18px;
+}

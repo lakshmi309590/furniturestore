@@ -42,10 +42,10 @@ Since most FurnitureWave furniture is flat-packed, they are quite easy to bring 
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
+            <a href="/"><FaFacebookF /></a>
+            <a  href="https://yourwebsite.com/about"><FaTwitter /></a>
+            <a  href="/contact"><FaInstagram /></a>
+            <a href="/"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>

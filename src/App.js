@@ -12,6 +12,7 @@ import Bed from './pages/Bed';
 import Lamp from './pages/Lamp';
 import Decore from './pages/Decore';
 import Wishlist from './pages/Wishlist';
+import Cart from './pages/cart/cart';
 
 export const myContext= createContext()
 
@@ -19,9 +20,10 @@ function App() {
   const [user,setUser]=useState([])
   const [sharedValue, setSharedValue]=useState(product)
   const [wishlist,setWishlist]=useState([])
+  const [cartItems,setCartItems]=useState([])
   return (
     <BrowserRouter>
-    <myContext.Provider value={{user,setUser,sharedValue, setSharedValue,wishlist,setWishlist}}>
+    <myContext.Provider value={{user,setUser,sharedValue, setSharedValue,wishlist,setWishlist,cartItems,setCartItems}}>
     <div className="App">
       <Routes>
         <Route path='/' element={<Signup/>}/>
@@ -33,6 +35,7 @@ function App() {
         <Route path='/lamp' element={<Lamp/>}/>
         <Route path='/decore' element={<Decore/>}/>
         <Route path='/wishlist' element={<Wishlist/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
     </div>
     </myContext.Provider>

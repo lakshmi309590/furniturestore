@@ -6,7 +6,7 @@ export const product = [
         "https://ii3.pepperfry.com/media/catalog/product/m/i/494x544/milton-3-seater-velvet-sofa-in-green-colour-by-home-lifestylez-milton-3-seater-velvet-sofa-in-green--vab3pt.jpg",
       category: "Sofas",
       price: 35500,
-      qty: 1,
+      qty: 44,
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ export const product = [
         "https://ii3.pepperfry.com/media/catalog/product/h/a/494x544/hairo-velvet-1-seater-sofa-in-beige-colour-hairo-velvet-1-seater-sofa-in-beige-colour-0l7hja.jpg",
       category: "Sofas",
       price: 33900,
-      qty: 1,
+      qty: 5,
     },
     {
       id: 3,

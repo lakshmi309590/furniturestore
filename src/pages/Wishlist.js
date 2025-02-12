@@ -23,7 +23,7 @@ function Wishlist(){
               <img className="product-image " alt={item.title} src={item.image} width="100" />
               <p className="product-category">Category: {item.category}</p>
               <p className="product-price">Price: ${item.price}</p>
-              <p className="product-quantity">Quantity: {item.qty}</p>
+             
 
               <button onClick={() => handleRemove(item.id)}>Remove</button>
             </div>

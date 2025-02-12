@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.css";
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
+import { myContext } from "../../App";
 
 function Header() {
+    const { cartItems } = useContext(myContext);
+    const cartCount = cartItems.reduce((total, item) => total + item.qty, 0);
     return (
         <header className="header">
             {/* Top Row */}
@@ -14,7 +17,10 @@ function Header() {
                 </div>
                 <div className="header__icons">
                     <Link to="/wishlist"><FaHeart /></Link>
-                    <Link to="/cart"><FaShoppingCart /></Link>
+                    <Link to="/cart" className="cart-link">
+                        <FaShoppingCart />
+                        {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+                    </Link>
                     <Link to="/profile"><FaUser /></Link>
                 </div>
             </div>
