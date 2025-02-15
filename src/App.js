@@ -13,6 +13,12 @@ import Lamp from './pages/Lamp';
 import Decore from './pages/Decore';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/cart/cart';
+import AdminLogin from './Admin/AdminLogin';
+import AdminDash from './Admin/AdminDasnboard';
+import AdminProduct from './Admin/AdminProduct';
+import AdminAddProduct from './Admin/AdminAddProduct';
+import ProductDetails from './pages/productDetails';
+import AdminEditProduct from './Admin/AdminEditProduct';
 
 export const myContext= createContext()
 
@@ -26,7 +32,7 @@ function App() {
     <myContext.Provider value={{user,setUser,sharedValue, setSharedValue,wishlist,setWishlist,cartItems,setCartItems}}>
     <div className="App">
       <Routes>
-        <Route path='/' element={<Signup/>}/>
+        <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/sofa' element={<SofasArmchairs/>}/>
@@ -36,6 +42,14 @@ function App() {
         <Route path='/decore' element={<Decore/>}/>
         <Route path='/wishlist' element={<Wishlist/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/productDetails/:id' elements={<ProductDetails/>}/>
+        //admin
+        <Route path="/Adminlogin" element={<AdminLogin/>}/>
+        <Route path='/admindash' element={<AdminDash/>}/>
+        <Route path="/" element={<AdminProduct/>}/>
+        <Route path="/adminAddProduct" element={<AdminAddProduct/>}/>
+        <Route path='/admin/edit-product/:id' element={<AdminEditProduct/>}/>
+      
       </Routes>
     </div>
     </myContext.Provider>
